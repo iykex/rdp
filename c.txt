@@ -5,14 +5,14 @@ You can use gdown. Consider also visiting that page for full instructions; this 
 Instructions
 Install it with the following command:
 
-```pip install gdown```
+$ pip install gdown```
 
 After that, you can download any file from Google Drive by running one of these commands:
 
-gdown https://drive.google.com/uc?id=<file_id>  # for files
-gdown <file_id>                                 # alternative format
-gdown --folder https://drive.google.com/drive/folders/<file_id>  # for folders
-gdown --folder --id <file_id>                                   # this format works for folders too
+$ gdown https://drive.google.com/uc?id=<file_id>  # for files
+$ gdown <file_id>                                 # alternative format
+$ gdown --folder https://drive.google.com/drive/folders/<file_id>  # for folders
+$ gdown --folder --id <file_id>                                   # this format works for folders too
 
 # Files
 https://drive.google.com/file/d/<file_id>/view?usp=sharing
@@ -23,6 +23,21 @@ Read more : https://stackoverflow.com/questions/25010369/wget-curl-large-file-fr
 
 
 
+BR to DAT 
+$ sudo apt install brotli
+$ brotli --decompress system.new.dat.br -o system.new.dat
+
+windows - download > https://manpages.ubuntu.com/manpages/bionic/man1/brotli.1.html
+$ brotli --decompress --in system.new.dat.br --out system.new.dat
+
 SDAT2IMG
+$ sdat2img system.transfer.list system.new.dat system.img
+
+IMG to Sparse_image 
+$ img2simg <raw/ext image file> <sparse_image_file> <block_size>
+$ img2simg system.img sparse_image.img [blocksize can be skipped]
+
+IMG to folder
+
 
 
