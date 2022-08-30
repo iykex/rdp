@@ -1,0 +1,15 @@
+BR to DAT 
+$ sudo apt install brotli
+$ brotli --decompress system.new.dat.br -o system.new.dat
+
+windows - download > https://manpages.ubuntu.com/manpages/bionic/man1/brotli.1.html
+$ brotli --decompress --in system.new.dat.br --out system.new.dat
+
+SDAT2IMG
+$ sdat2img system.transfer.list system.new.dat system.img
+
+IMG to Sparse_image 
+$ img2simg <raw/ext image file> <sparse_image_file> <block_size>
+$ img2simg system.img sparse_image.img [blocksize can be skipped]
+
+IMG to folder
