@@ -6,7 +6,14 @@ windows - download > https://manpages.ubuntu.com/manpages/bionic/man1/brotli.1.h
 $ brotli --decompress --in system.new.dat.br --out system.new.dat
 
 SDAT2IMG
+
+-windows
 $ sdat2img system.transfer.list system.new.dat system.img
+
+-linux
+wget https://github.com/iykex/rdp/raw/main/andr/sdat2img.py
+$ chmod +x ./sdat2img.py
+$ ./sdat2img.py vendor.transfer.list vendor.new.dat vendor.img
 
 IMG to Sparse_image 
 $ img2simg <raw/ext image file> <sparse_image_file> <block_size>
