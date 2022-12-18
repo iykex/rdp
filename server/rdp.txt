@@ -28,6 +28,7 @@ https://archive.org/download/w7-qcow2/win7lite.img.gz
 
 https://archive.org/download/w7-qcow2/w7.qcow2.gz
 
+see more : https://go.aank.me/win/
 
 # Wind10 Lite
 wget -O w10.sh https://bit.ly/WLite10 && chmod +x w10.sh && ./w10.sh
